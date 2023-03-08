@@ -1,0 +1,11 @@
+header{
+    background-color: blue;
+    max-width: 100%;
+    top: 0%;
+    padding: 10px;
+    margin-bottom: 50px;
+    color: white;
+}
+body{
+    background-color: #FF2222;
+}
