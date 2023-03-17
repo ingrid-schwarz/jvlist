@@ -7,13 +7,13 @@ import './App.css';
 import Speedrun from './components/Speedrun';
 
 class App extends Component {
-  render() {
-    <Switch>
-      <Route exact path = "/" component = {TitlePart}></Route>
-      <Route exact path = "/speedruns" component = {Speedrun}></Route>
-    </Switch>
+  render() {   
     return (
       <div className="App">
+        <Switch>
+          <Route exact path="/" element={TitlePart}></Route>
+          <Route exact path="/speedruns" element={Speedrun}></Route>
+        </Switch>
         <Header />
         <Footer />
       </div>
