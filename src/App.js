@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import TitlePart from './components/TitlePart';
 import {BrowserRouter, Route, Routes, NavLink} from 'react-router-dom';
 import './App.css';
+import './components/css/Header.css';
 import Speedrun from './components/Speedrun';
-
+import './components/css/Footer.css';
 class App extends Component {
   
   render() {   
@@ -23,9 +24,11 @@ class App extends Component {
                     <li><NavLink activeClassName="navlink" to="/mes-jeux">Mes jeux</NavLink></li>
                     <li><NavLink activeClassName="navlink" to="/speedrun">Speedruns</NavLink></li>
                 </ul>
-            </nav>
-            
+            </nav>   
           </header>
+          <footer>
+            test footer
+          </footer>
         </div>
       </BrowserRouter>
     );
