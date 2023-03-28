@@ -28,7 +28,7 @@ class App extends Component {
           
           <Routes>
             <Route path="/" element={<TitlePart/>}></Route>
-            <Route path="/speedruns" element={<Speedrun/>}></Route>
+            <Route path="/speedrun" element={<Speedrun/>}></Route>
           </Routes>
           <Footer/>
         </div>
