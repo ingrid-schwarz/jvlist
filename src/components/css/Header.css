@@ -8,6 +8,7 @@ header{
 }
 body{
     background-color: #FF2222;
+    color: white;
 }
 
 nav{
@@ -25,4 +26,9 @@ ul{
     text-decoration: none;
     list-style: none;
     font-weight: 600;
+}
+
+a{
+    color: white;
+    text-decoration: none;
 }

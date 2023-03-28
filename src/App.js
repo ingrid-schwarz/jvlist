@@ -11,21 +11,24 @@ class App extends Component {
     return (     
       <BrowserRouter> 
         <div className="App">
-          <Routes>
-            <Route exact path="/" element={TitlePart}></Route>
-            <Route exact path="/speedruns" element={Speedrun}></Route>
-          </Routes>
+          
           <header>
             <nav>
                 <h2>Test barre de navigation</h2>  
                 <ul>
-                    <li><NavLink activeClassName="navlink" to="/">Accueil</NavLink></li>
+                    <li><NavLink activeClassName="navlink" to="/" element={<TitlePart/>}>Accueil</NavLink></li>
                     <li><NavLink activeClassName="navlink" to="/jeux">Les jeux</NavLink></li>
                     <li><NavLink activeClassName="navlink" to="/mes-jeux">Mes jeux</NavLink></li>
-                    <li><NavLink activeClassName="navlink" to="/speedrun">Speedruns</NavLink></li>
+                    <li><NavLink activeClassName="navlink" to="/speedrun" element={Speedrun}>Speedruns</NavLink></li>
                 </ul>
             </nav>   
           </header>
+          
+          <Routes>
+            <Route path="/" element={<TitlePart/>}></Route>
+            <Route path="/speedruns" element={<Speedrun/>}></Route>
+          </Routes>
+
           <footer>
             test footer
           </footer>
