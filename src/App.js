@@ -4,7 +4,9 @@ import {BrowserRouter, Route, Routes, NavLink} from 'react-router-dom';
 import './App.css';
 import './components/css/Header.css';
 import Speedrun from './components/Speedrun';
-import './components/css/Footer.css';
+import Footer from './components/Footer';
+
+
 class App extends Component {
   
   render() {   
@@ -28,10 +30,7 @@ class App extends Component {
             <Route path="/" element={<TitlePart/>}></Route>
             <Route path="/speedruns" element={<Speedrun/>}></Route>
           </Routes>
-
-          <footer>
-            test footer
-          </footer>
+          <Footer/>
         </div>
       </BrowserRouter>
     );
