@@ -5,6 +5,8 @@ import './App.css';
 import './components/css/Header.css';
 import Speedrun from './components/Speedrun';
 import Footer from './components/Footer';
+import MyGames from './components/MyGames';
+import Games from './components/Games';
 
 
 class App extends Component {
@@ -29,6 +31,8 @@ class App extends Component {
           <Routes>
             <Route path="/" element={<TitlePart/>}></Route>
             <Route path="/speedrun" element={<Speedrun/>}></Route>
+            <Route path="/mes-jeux" element={<MyGames/>}></Route>
+            <Route path="/jeux" element={<Games/>}></Route>
           </Routes>
           <Footer/>
         </div>
